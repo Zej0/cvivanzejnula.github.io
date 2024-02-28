@@ -55,8 +55,12 @@ body::-webkit-scrollbar {
   text-decoration: none;
   color: black;
 }
-#okvir header nav {
+#okvir header {
+  width: 100%;
   position: fixed;
+  z-index: 999;
+}
+#okvir header nav {
   background-color: #424242;
   width: 100%;
   height: 7vh;
@@ -166,8 +170,8 @@ body::-webkit-scrollbar {
   margin: 2vh auto;
 }
 #okvir #Projects .Project {
-  margin: 2vh 5%;
   position: relative;
+  margin: 2vh 5%;
   width: 40%;
   height: auto;
   text-align: center;
@@ -183,6 +187,10 @@ body::-webkit-scrollbar {
   filter: brightness(20%);
   border: 5px white;
 }
+#okvir #Projects .Project img:hover {
+  animation: HoverZoom ease 500ms;
+  animation-fill-mode: both;
+}
 #okvir #Projects .Project .TextBox {
   position: absolute;
   top: 45%;
@@ -194,6 +202,10 @@ body::-webkit-scrollbar {
   font-weight: 600;
   text-align: center;
   font-weight: 500;
+}
+#okvir #Projects .Project:hover {
+  animation: HoverZoom ease 500ms;
+  animation-fill-mode: both;
 }
 #okvir footer {
   width: 100%;
@@ -266,4 +278,8 @@ body::-webkit-scrollbar {
   border-radius: 10px;
   width: 40%;
   height: 4.5vh;
+}
+#okvir #Contact form #Buttons .Button:hover {
+  animation: HoverZoom ease 500ms;
+  animation-fill-mode: both;
 }

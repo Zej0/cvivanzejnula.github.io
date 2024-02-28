@@ -53,9 +53,10 @@ body::-webkit-scrollbar {
         color: black;
     }
     header{
+        width: 100%;    
+        position: fixed;
+        z-index: 999;
         nav{
-            position: fixed;
-            z-index: 999;
             background-color: $header-color;
             width: 100%;
             height: 7vh;
@@ -171,8 +172,8 @@ body::-webkit-scrollbar {
         width: 70%;
         margin: 2vh auto;
         .Project{
-            margin: 2vh 5%;
             position: relative;
+            margin: 2vh 5%;
             width: 40%;
             height: auto;
             text-align: center;
@@ -184,6 +185,10 @@ body::-webkit-scrollbar {
                 border-radius: 20px;
                 filter: brightness(20%);
                 border: 5px white;
+            }
+            img:hover{
+                animation: HoverZoom ease 500ms;
+                animation-fill-mode: both;
             }
             .TextBox{
                 position: absolute;
@@ -265,6 +270,10 @@ body::-webkit-scrollbar {
                     border-radius: 10px;
                     width: 40%;
                     height: 4.5vh;
+                }
+                .Button:hover{
+                    animation: HoverZoom ease 500ms;
+                    animation-fill-mode: both; 
                 }
             }
         }  
