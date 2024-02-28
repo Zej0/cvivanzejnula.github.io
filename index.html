@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE11">
+        <meta name="keywords" content="Web, Design, Database, Programming, Portfolio, Video, Editing">
+        <meta name="description" content="My Portfolio">
+        <link rel="shortcut icon" type="image/png" href="images/Icon.png">
+        <link rel="stylesheet" href="css/style.css">
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+        <!--Icons-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script src="https://kit.fontawesome.com/9343e2a586.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="okvir">
+            <div id="beginning"></div>
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="#beginning"><img src="image/Logo.png"/></a></li>
+                    </ul>
+                    <ul id="navigacija">
+                        <li><a href="#beginning" class="navItem">About</a></li>
+                        <li><a href="#Skills" class="navItem">Skills</a></li>
+                        <li><a href="#Projects" class="navItem">Projects</a></li>
+                        <li><a href="#Contact" class="navItem">Contacts</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="Slogan">
+                <h1>Building the Web, One Line of Code at a Time.</h1>
+            </div>
+            <div id="About">
+                <h2>About</h2>
+                <img src="image/Author.jpg">
+                <div class="TextBox">
+                    <p>Name: Ivan Zejnula</p>
+                    <p>Age: 19</p>
+                    <p>Field of Expertise: WebDev</p>
+                    <p>Desc: Passionate web developer with a keen eye for design and a knack for crafting intuitive user experiences. Proficient in front-end technologies like HTML, CSS, and JavaScript, with expertise in modern frameworks like React. Dedicated to writing clean, efficient code and staying current with industry trends. Committed to collaborating with teams to bring digital visions to life.</p>
+                </div>
+                <div class="cleaner"></div>
+            </div>
+            <div id="Skills">
+                <h2>Skills</h2>
+                <div class="Skill" id="Skill1"><p>HTML</p></div>
+                <div class="Skill" id="Skill2"><p>CSS</p></div>
+                <div class="Skill" id="Skill3"><p>SQL</p></div>
+                <div class="Skill" id="Skill4"><p>C++</p></div>
+            </div>
+            <div id="Projects">
+                <h2>Project</h2>
+                <div class="Project">
+                    <img src="image/Sajt1.png"/>
+                    <div class="TextBox"><p>Porsche</p></div>
+                </div>
+                <div class="Project">
+                    <img src="image/Sajt2.png"/>
+                    <div class="TextBox"><p>Portfolio</p></div>
+                </div>
+                <div class="cleaner"></div>
+            </div>
+            <div id="Contact">
+                <h2>Contact us</h2>      
+                <form target="_blank" action="" method="post">
+                    <input type="text" class="InputArea" id="ime" name="ime" placeholder="First Name" required><br>
+                    <input type="text" class="InputArea" id="prezime" name="prezime" placeholder="Last Name" required><br>
+                    <input type="email" class="InputArea" id="mail" name="mail" placeholder="E-mail" required><br>      
+                    <input type="text" class="InputArea" id="number" name="number" placeholder="Phone" required><br/>           
+                    <label class="InputText"><b>Ask a question:</b></label><br/>
+                    <textarea id="Desc" class="TextArea" name="Napomena" placeholder="Ask a Question"></textarea>                
+                    <div id="Buttons">
+                        <button id="ButtonSubmit" class="Button" type="submit">Submit</button>
+                        <button class="Button" type="reset">Cancel</button>
+                    </div>
+                </form>
+            </div>
+            <footer>
+                <div class="icon">
+                    <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a target="_blank" href=""><i class="fa-solid fa-sitemap"></i></a>
+                    <a target="_blank" href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a target="_blank" href=""><i class="fa-solid fa-rss"></i></a>
+                </div>
+                <p id="prava">&copy; 2024 Ivan Zejnula</p>
+            </footer>
+        </div>
+    </body>
+</html>

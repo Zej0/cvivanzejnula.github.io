@@ -1,0 +1,268 @@
+@import '_config.scss';
+
+@keyframes HoverZoom{
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: $boja1;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.cleaner{
+    clear: both;
+}
+
+#okvir{
+    width: 100%;
+    height: 100%;
+    h1{
+        @include font1;
+        font-size: 4.5vh;
+        color: $font-color;
+    }
+    h2{
+        @include font1;
+        font-size: 3vh;
+        color: $font-color;
+    }
+    p{
+        @include font2;
+        font-size: 1.7vh;
+        color: $font-color;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    header{
+        nav{
+            position: fixed;
+            background-color: $header-color;
+            width: 100%;
+            height: 7vh;
+            ul{
+                list-style-type: none;
+                li{
+                    a{
+                        img{
+                            width: auto;
+                            height: 6vh;
+                            margin-left: 2%;
+                            margin-top: 3px;
+                            float: left;
+                        }
+                    }
+                }
+            }
+            #navigacija{
+                float: right;
+                height: 100%;
+                text-align: center;
+                margin-right: 2%;
+                li{
+                    display: inline-block; 
+                    margin: 1.3vh 1vh 0vh 1vh; 
+                }   
+                .navItem{
+                    padding: 1vh 4.5vh;
+                    color: black;
+                    text-decoration: none;
+                    display: inline-block;
+                    border: 2px solid black;
+                    border-radius: 5px;
+                    background-color: #bbbbbb;
+                    @include font2;
+                    line-height: 1;
+                }
+                .navItem:hover{
+                    font-weight: bold;
+                    color: black;
+                    background-color: #818181;
+                    animation: HoverZoom ease 500ms;
+                    animation-fill-mode: both;  
+                }
+            }
+        }
+    }
+    #Slogan{
+        background-image: url('../image/SloganSlika.jpg');
+        background-size: 100% auto;
+        background-position: 0px;
+        width: 100%;
+        height: 90vh;
+        background-repeat: no-repeat;
+        display: flex;
+        h1{
+            color: $font-color;
+            text-align: left;
+            align-self: flex-end;
+            margin-bottom: 2vh;
+            margin-left: 2vh;
+            font-style: italic;
+            font-size: 60px;
+        }
+    }
+    #About{
+        width: 60%;
+        margin: 3vh auto;
+        img{
+            margin-top: 3.5vh;
+            width: 47%;
+            float: left;
+        }
+        .TextBox{
+            float: right;
+            width: 47%;
+        
+            p{
+                margin-top: 3.5vh;
+                font-size: 22px;
+                font-weight: 400;
+                text-align: justify;
+                letter-spacing: 0.08vh;
+            }
+        }
+    }
+    #Skills{
+        .Skill{
+            height: 2.5vh;
+            margin: 1vh auto;
+            width: 50%;
+            border-radius: 25px;
+        }
+        p{
+            margin: 0px 0px 0px 1.2vh;
+            font-weight: 700;
+            font-style: italic;
+        }
+        #Skill1{
+            background-image: linear-gradient(to right, $boja2 90%, $boja1, $boja1, $boja1, $boja1);
+        }
+        #Skill2{
+            background-image: linear-gradient(to right, $boja2 80%, $boja1, $boja1, $boja1, $boja1);
+        }
+        #Skill3{
+            background-image: linear-gradient(to right, $boja2 65%, $boja1, $boja1, $boja1, $boja1);
+        }
+        #Skill4{
+            background-image: linear-gradient(to right, $boja2 75%, $boja1, $boja1, $boja1, $boja1);
+        }
+    }
+    #Projects{
+        width: 70%;
+        margin: 2vh auto;
+        .Project{
+            margin: 2vh 5%;
+            position: relative;
+            width: 40%;
+            height: auto;
+            text-align: center;
+            @include font1;
+            border-radius: 10px;
+            float: left;
+            img{
+                width: 100%;
+                border-radius: 20px;
+                filter: brightness(20%);
+                border: 5px white;
+            }
+            .TextBox{
+                position: absolute;
+                top: 45%;
+                left: 45%;
+                translate: transform(-50%, -50%);
+                p{
+                    @include font1;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    footer{
+        width: 100%;
+        background-color: $header-color;
+        color: $font-color;
+        height: 20vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .icon{
+            display: flex;
+            justify-content: space-between;
+            letter-spacing: 30px;
+            i{
+                color: $font-color;
+                font-size: 50px;
+            }
+        }
+        #prava{
+            @include font1;
+        }
+    }
+    #Contact{
+        form{
+            margin: 0px auto;
+            width: 40%;
+            .InputArea{
+                width: 90%;
+                height: 3vh;
+                border-radius: 10px;
+                @include font1;
+                text-align: center;
+                border-radius: 3px;
+                border: 1px solid #424242;
+                margin: 2.5% 5%;
+            }
+            .InputText{
+                @include font2;
+                color: $font-color;
+                margin-left: 5%;
+            }
+            .TextArea{
+                width: 90%;
+                height: 10vh;
+                resize: none;
+                font-family: 'Roboto', sans-serif; 
+                text-align: center;
+                border-radius: 3px;
+                border: 1px solid #424242;
+                margin: 0px 5%;
+            }
+            #Buttons{
+                margin: 0px auto;
+                width: 40%;
+                .Button{
+                    margin: 1vh 4%; 
+                    border: 2.2px solid transparent; 
+                    @include font2;
+                    text-decoration: none;
+                    color: white;
+                    font-size: 20px;
+                    background-color: black;
+                    border-radius: 10px;
+                    width: 40%;
+                    height: 4.5vh;
+                }
+            }
+        }  
+    }
+}
+
