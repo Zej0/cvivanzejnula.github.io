@@ -196,6 +196,10 @@ body::-webkit-scrollbar {
                 }
             }
         }
+        .Project:hover{
+            animation: HoverZoom ease 500ms;
+            animation-fill-mode: both;  
+        }
     }
     footer{
         width: 100%;
