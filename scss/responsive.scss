@@ -1,0 +1,76 @@
+@media screen and (max-width: 1420px){
+    #okvir{
+        #Slogan{
+                h1{
+                    font-size: 50px;
+                }
+        }
+    }
+}
+
+@media screen and (max-width: 1250px){
+    #okvir{
+        #Slogan{
+            h1{
+                font-size: 40px;
+            }
+    }
+        #About{
+            .TextBox{
+                p{
+                    font-size: 17px;
+                    text-align: left;
+                }
+            }
+        }
+        #Projects{
+            .Project{
+                margin: 2vh auto;
+                float: none;
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px){
+    #okvir{
+        #Slogan{
+            h1{
+                font-size: 30px;
+            }
+    }
+        #About{
+            .TextBox{
+                
+                p{
+                    font-size: 14px;
+                    text-align: left;
+                }
+            }
+        }
+        #Projects{
+            .Project{
+                .TextBox{
+                    P{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #okvir{
+        header{
+            nav{
+                #navigacija{
+                    .navItem{
+                        padding: 1vh 3vh;
+                    }
+                }
+            }
+        }
+    }
+}

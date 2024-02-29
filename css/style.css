@@ -105,20 +105,20 @@ body::-webkit-scrollbar {
   animation-fill-mode: both;
 }
 #okvir #Slogan {
-  background-image: url("../image/SloganSlika.jpg");
-  background-size: 100% auto;
-  background-position: 0px;
   width: 100%;
-  height: 90vh;
-  background-repeat: no-repeat;
-  display: flex;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  position: relative;
+}
+#okvir #Slogan img {
+  width: 100%;
 }
 #okvir #Slogan h1 {
   color: white;
   text-align: left;
-  align-self: flex-end;
-  margin-bottom: 2vh;
-  margin-left: 2vh;
+  position: absolute;
+  bottom: 4vh;
+  left: 2vh;
   font-style: italic;
   font-size: 60px;
 }
@@ -134,12 +134,13 @@ body::-webkit-scrollbar {
 #okvir #About .TextBox {
   float: right;
   width: 47%;
+  margin-top: 3.5vh;
 }
 #okvir #About .TextBox p {
-  margin-top: 3.5vh;
+  margin-top: 2vh;
   font-size: 22px;
   font-weight: 400;
-  text-align: justify;
+  text-align: left;
   letter-spacing: 0.08vh;
 }
 #okvir #Skills .Skill {
@@ -282,4 +283,41 @@ body::-webkit-scrollbar {
 #okvir #Contact form #Buttons .Button:hover {
   animation: HoverZoom ease 500ms;
   animation-fill-mode: both;
+}
+
+@media screen and (max-width: 1420px) {
+  #okvir #Slogan h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  #okvir #Slogan h1 {
+    font-size: 40px;
+  }
+  #okvir #About .TextBox p {
+    font-size: 17px;
+    text-align: left;
+  }
+  #okvir #Projects .Project {
+    margin: 2vh auto;
+    float: none;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #okvir #Slogan h1 {
+    font-size: 30px;
+  }
+  #okvir #About .TextBox p {
+    font-size: 14px;
+    text-align: left;
+  }
+  #okvir #Projects .Project .TextBox P {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #okvir header nav #navigacija .navItem {
+    padding: 1vh 3vh;
+  }
 }
