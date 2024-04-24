@@ -55,7 +55,7 @@ body::-webkit-scrollbar {
         width: 100%;    
         position: fixed;
         z-index: 999;
-        height: 7%;
+        height: 7vh;
         nav{
             background-color: $header-color;
             width: 100%;
@@ -136,7 +136,7 @@ body::-webkit-scrollbar {
             margin-top: 3.5vh;
         
             p{
-                margin-top: 2vh;
+                margin-top: 2vw;
                 font-size: 22px;
                 font-weight: 400;
                 text-align: left;
@@ -150,6 +150,7 @@ body::-webkit-scrollbar {
             margin: 1vh auto;
             width: 50%;
             border-radius: 25px;
+            border: black 1px solid;
         }
         p{
             margin: 0px 0px 0px 1.2vh;
@@ -157,16 +158,16 @@ body::-webkit-scrollbar {
             font-style: italic;
         }
         #Skill1{
-            background-image: linear-gradient(to right, $boja2 90%, $boja1, $boja1, $boja1, $boja1);
+            background-image: linear-gradient(to right, $boja2 90%, $boja3, $boja3, $boja3, $boja3);
         }
         #Skill2{
-            background-image: linear-gradient(to right, $boja2 80%, $boja1, $boja1, $boja1, $boja1);
+            background-image: linear-gradient(to right, $boja2 80%, $boja3, $boja3, $boja3, $boja3);
         }
         #Skill3{
-            background-image: linear-gradient(to right, $boja2 65%, $boja1, $boja1, $boja1, $boja1);
+            background-image: linear-gradient(to right, $boja2 65%, $boja3, $boja3, $boja3, $boja3);
         }
         #Skill4{
-            background-image: linear-gradient(to right, $boja2 75%, $boja1, $boja1, $boja1, $boja1);
+            background-image: linear-gradient(to right, $boja2 75%, $boja3, $boja3, $boja3, $boja3);
         }
     }
     #Projects{

@@ -17,7 +17,13 @@
     width: 70%;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
+  #okvir header {
+    height: 5vw;
+  }
+  #okvir header nav ul li a img {
+    height: 4.5vw;
+  }
   #okvir #Slogan h1 {
     font-size: 30px;
   }
